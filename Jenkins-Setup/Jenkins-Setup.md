@@ -19,6 +19,7 @@ Solution :
 ssh root@jenkins 
 apt update -y 
 ```
+![Screenshots](Screenshots/Screenshot-1.png)
 
 2. Install Java and Jenkins
 ```
@@ -30,6 +31,7 @@ chmod a+r /etc/apt/keyrings/jenkins-keyring.asc
 echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" > /etc/apt/sources.list.d/jenkins.list
 apt update && apt install -y jenkins
 ```
+![Screenshots](Screenshots/Screenshot-2.png)
 
 3. Start the jenkins server and check for the service logs. 
 ```
@@ -38,5 +40,8 @@ service jenkins start
 service jenkins status
 tail -n 100 /var/log/jenkins/jenkins.log
 ```
+![Screenshots](Screenshots/Screenshot-3.png)
 
 4. Open the jenkins ui and create the user. 
+
+![Screenshots](Screenshots/Screenshot-4.png)
