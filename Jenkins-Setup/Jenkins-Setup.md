@@ -14,14 +14,14 @@ Note:
 
 Solution : 
 
-1. SSH into the Jenkins Server and update the server
+## 1. SSH into the Jenkins Server and update the server
 ```
 ssh root@jenkins 
 apt update -y 
 ```
 ![Screenshots](Screenshots/Screenshot-1.png)
 
-2. Install Java and Jenkins
+## 2. Install Java and Jenkins
 ```
 apt install -y openjdk-21-jre fontconfig curl gnupg
 
@@ -33,7 +33,7 @@ apt update && apt install -y jenkins
 ```
 ![Screenshots](Screenshots/Screenshot-2.png)
 
-3. Start the jenkins server and check for the service logs. 
+## 3. Start the jenkins server and check for the service logs. 
 ```
 service jenkins start
 
@@ -42,6 +42,6 @@ tail -n 100 /var/log/jenkins/jenkins.log
 ```
 ![Screenshots](Screenshots/Screenshot-3.png)
 
-4. Open the jenkins ui and create the user. 
+## 4. Open the jenkins ui and create the user. 
 
 ![Screenshots](Screenshots/Screenshot-4.png)
